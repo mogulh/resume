@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mogulh Kiti</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style="background-color: antiquewhite;">
+    <nav class="text-amber text-accent-4 z-depth-0">
+        <div class="container-fluid light-blue darken-4 nav-wrapper  z-depth-0">
+            <a href="{% url 'home' %}" class="brand-logo">Mogulh Kiti</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down z-depth-0">
+
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#referees">Referees</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#">Friend profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="content" class="container">
+
+        <div class="row" style="margin-top: 20px;padding: 10px;">
+            <div class="col m3 offset-m1">
+                <img id="mainImg" src='{% static "images/profile.JPG" %}' alt="" class="circle responsive-img">
+
+            </div>
+
+            <div class="col m6 ">
+                <span class="heading-1" style="font-size: 46px; margin-right: 20px;">I am</span>
+                <span class="heading-1" style="font-size: 50px; color: #01579b; font-weight: bold;">Mogulh Kiti!</span>
+                <hr style="border-top: 1px solid #01579b;">
+                <h4>Introduction</h4>
+                <p>I am young and hardworking young man who easily adapts to new environments and working conditions. I am frequently updating my skills through online courses especially in the IT field. Which has landed me to freelance work like website
+                    development and other Graphic Design </p>
+                <h5>Objectives</h5>
+                <p>I am starting a high school club to teach studnts how to program from an early stage <br> I believe by exposing the young generation to technology and how to use computers to solve prolems then most of African problems will be solved <br>                    Since African problems require African solutions</p>
+
+
+            </div>
+        </div>
+        <div id="personal" class="section container" style="margin: auto;">
+            <h3>Personal information</h3>
+            <div class="infoCard">
+
+                <h5 style="color: #01579b;">FULL NAME</h5>
+                <hr style="border-top: 1px solid #01579b;">
+                <p style="font-size:large; margin-top: 0%;">Mogulh Chilyalya Kiti</p>
+
+            </div>
+            <div class="infoCard">
+
+                <h5 style="color: #01579b;">GENDER</h5>
+                <hr style="border-top: 1px solid #01579b;">
+                <p style="font-size:large; margin-top: 0%;">Mogulh Chilyalya Kiti</p>
+
+            </div>
+            <div class="infoCard">
+
+                <h5 style="color: #01579b;">DATE OF BIRTH</h5>
+                <hr style="border-top: 1px solid #01579b;">
+                <p style="font-size:large; margin-top: 0%;">8th April 1998</p>
+
+            </div>
+            <div class="infoCard">
+
+                <h5 style="color: #01579b;">NATIONALITY</h5>
+                <hr style="border-top: 1px solid #01579b;">
+                <p style="font-size:large; margin-top: 0%;">Kenyan</p>
+
+            </div>
+            <div class="infoCard">
+
+                <h5 style="color: #01579b;">PHONE NUMBER</h5>
+                <hr style="border-top: 1px solid #01579b;">
+                <p style="font-size:large; margin-top: 0%;">0724369689</p>
+
+            </div>
+            <div class="infoCard">
+
+                <h5 style="color: #01579b;">EMAIL</h5>
+                <hr style="border-top: 1px solid #01579b;">
+                <p style="font-size:large; margin-top: 0%;">moglhkiti@gmail.com</p>
+
+            </div>
+
+
+
+        </div>
+
+        <div id="education" class="section container">
+            <h3>Education</h3>
+
+            <div class="eduCard">
+                <div class="card" style="padding: 10px;">
+                    <h5 style="color: #01579b;">Bachelor's of Education(ICT)</h5>
+                    <hr>
+                    <span><i class="material-icons left">school</i></span>
+                    <p style="font-size:large; margin-top: 0%;">University Of Nairobi(2018-present)</p>
+                    <p>Studying how to educate the young generation on computing and technology <br> Taking mathematics as minor subject</p>
+                </div>
+
+            </div>
+            <div class="eduCard">
+                <div class="card" style="padding: 10px;">
+                    <h5 style="color: #01579b;">Python Programming</h5>
+                    <hr>
+                    <span><i class="material-icons left">code</i></span>
+                    <p style="font-size:large; margin-top: 0%;">FreeCodeCamp.org(2018-2020)</p>
+                    <p>Studying how to program using python programming language and OOP <br> Automating the boring stuff with python</p>
+                </div>
+
+            </div>
+            <div class="eduCard">
+                <div class="card" style="padding: 10px;">
+                    <h5 style="color: #01579b;">Web development</h5>
+                    <hr>
+                    <span><i class="material-icons left">code</i></span>
+                    <p style="font-size:large; margin-top: 0%;">Udemy(2019-2020)</p>
+                    <p>Learnt how to make websites using basic html css and javascript <br> Making simple websites</p>
+                </div>
+
+            </div>
+            <div class="eduCard">
+                <div class="card" style="padding: 10px;">
+                    <h5 style="color: #01579b;">KCSE</h5>
+                    <hr>
+                    <span><i class="material-icons left">school</i></span>
+                    <p style="font-size:large; margin-top: 0%;">Allidina Visram High School(2012-2015)</p>
+                    <p>Obtained the O-level certificate<br> Mean B+(plus)</p>
+                </div>
+
+            </div>
+            <div class="eduCard">
+                <div class="card" style="padding: 10px;">
+                    <h5 style="color: #01579b;">KCPE</h5>
+                    <hr>
+                    <span><i class="material-icons left">school</i></span>
+                    <p style="font-size:large; margin-top: 0%;">M.M.Shah Primary School(2004-2011)</p>
+                    <p>Obtained the primary-level certificate<br> Mean B+(374)</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="experience" class="section container">
+            <h3>Work Experience</h3>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <div class="card timeline-content">
+
+
+                        <div class="card-content">
+                            <span class="card-title " style="color: #01579b;">Student-Teacher</span>
+                            <h6>Shimo La Tewa School</h6>
+                            <p>3 months</p>
+                            <hr>
+                            <p>Teaching Computer studies</p>
+                            <p>Teaching mathematics</p>
+                            <p>Patroning the programming club</p>
+                        </div>
+                    </div>
+                    <div class="timeline-badge blue white-text"><i class="material-icons">school</i></div>
+                </div>
+                <div class="timeline-event">
+                    <div class="card timeline-content">
+
+
+                        <div class="card-content">
+                            <span class="card-title" style="color: #01579b;">Lead Programmer</span>
+                            <h6>TMF LTD</h6>
+                            <p>2020-present</p>
+                            <hr>
+                            <p>System Design and development</p>
+                            <p>Web development</p>
+                            <p>App development</p>
+                        </div>
+                    </div>
+                    <div class="timeline-badge green white-text"><i class="material-icons">code</i></div>
+                </div>
+                <div class="timeline-event">
+                    <div class="card timeline-content">
+
+
+                        <div class="card-content">
+                            <span class="card-title" style="color: #01579b;">Tutor</span>
+                            <h6>Hidaya Computer college</h6>
+                            <p>2018-2019</p>
+                            <hr>
+                            <p>Teaching Computer studies</p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-badge blue white-text"><i class="material-icons">school</i></div>
+                </div>
+                <div class="timeline-event">
+                    <div class="card timeline-content">
+
+
+                        <div class="card-content">
+                            <span class="card-title" style="color: #01579b;">Student-Mentor</span>
+                            <h6>Light Academy-Karen</h6>
+                            <p>2017-2019</p>
+                            <hr>
+                            <p>Supervising student preps</p>
+                            <p>Mentoring students</p>
+                            <p>Coaching Volleyball</p>
+                        </div>
+                    </div>
+                    <div class="timeline-badge blue white-text"><i class="material-icons">school</i></div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="hobbies" class="section container">
+            <h3>Hobbies and Interests</h3>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <div class="card timeline-content">
+
+
+                        <div class="card-content">
+                            <span class="card-title " style="color: #01579b;">Art</span>
+
+                        </div>
+                    </div>
+                    <div class="timeline-badge blue white-text"><i class="material-icons">palette</i></div>
+                </div>
+                <div class="timeline-event">
+                    <div class="card timeline-content">
+
+
+                        <div class="card-content">
+                            <span class="card-title" style="color: #01579b;">Swimming</span>
+
+                        </div>
+                    </div>
+                    <div class="timeline-badge green white-text"><i class="material-icons">pool</i></div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="card timeline-content">
+
+
+                        <div class="card-content">
+                            <span class="card-title" style="color: #01579b;">Tailoring</span>
+
+                        </div>
+                    </div>
+                    <div class="timeline-badge blue white-text"><i class="material-icons">storefront</i></div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="referees" class="section container">
+            <h3>Referees</h3>
+            <div class="row">
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title" style="color: #01579b;">Fatih Ardogan</span>
+                            <p>Director Peace Foundation</p>
+                            <p>0728451817</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title" style="color: #01579b;">Mutiso Mbinda</span>
+                            <p>Principal Shimo La Twa</p>
+                            <p>0722186000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title" style="color: #01579b;">Mohamed Ali</span>
+                            <p>Director TMF LTD</p>
+                            <p>0777505222</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+
+</html>
